@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University project for James Allan 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .center-div {
+            width: 100%; /* Take full width */
+            max-width: 1200px; /* Set a maximum width to avoid stretching on larger screens */
+            height: 100vh;
+            background-color: rgb(102, 71, 255);
+            border-radius: 15px;
+            padding: 5px;
+            box-sizing: border-box;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .center-div {
+                height: 100vh; /* Take full height on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="center-div">
+        <iframe
+            style="border: none;"
+            srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v0/inject.js'></script>
+            <script>
+              window.botpressWebChat.init({
+                  'composerPlaceholder': 'Talk to Tech Tutor',
+                  'botConversationDescription': 'Educational Chat Bot',
+                  'botName': 'Tech Tutor',
+                  'botId': '2d214ee3-7a42-491a-bdfe-6ea957b02864',
+                  'hostUrl': 'https://cdn.botpress.cloud/webchat/v0',
+                  'messagingUrl': 'https://messaging.botpress.cloud',
+                  'clientId': '2d214ee3-7a42-491a-bdfe-6ea957b02864',
+                  'enableConversationDeletion': true,
+                  'showPoweredBy': false,
+                  'className': 'webchatIframe',
+                  'containerWidth': '100%25',
+                  'layoutWidth': '100%25',
+                  'hideWidget': true,
+                  'showCloseButton': false,
+                  'disableAnimations': true,
+                  'closeOnEscape': false,
+                  'showConversationsButton': false,
+                  'enableTranscriptDownload': false,
+                  'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3de8d084-7ecf-4fbe-911f-4c2e93d92e1f/v2522/style.css'
+              });
+              window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+            </script></body>"
+            width="100%"
+            height="100%"
+        ></iframe>
+    </div>
+</body>
+</html>
